@@ -7,11 +7,11 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
+/*@media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
+}*/
 
 .App-header {
   background-color: #282c34;
@@ -35,4 +35,19 @@
   to {
     transform: rotate(360deg);
   }
+}
+h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: cyan;
+}
+h2 {
+  font-style: unset;
+  font-stretch: extra-expanded;
+  font-family: fantasy;
+  color: chocolate;
+}
+img {
+  border-radius: 50px;
+  padding: 50px dashed red;
+  width: 600px;
 }
