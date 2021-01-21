@@ -1,15 +1,20 @@
-import "./App.css";
 import Home from "./Components/Home";
 import ProductList from "./Components/ProductList";
+import { ThemeProvider } from "styled-components";
 
+import { GlobalStyle } from "./styles";
+const theme = {
+  backgroundcolor: "silver",
+};
 function App() {
   return (
-    <div>
+    <ThemeProvider theme={theme}>
+      <GlobalStyle />
+
       <Home />
-      <div>
-        <ProductList />
-      </div>
-    </div>
+
+      <ProductList />
+    </ThemeProvider>
   );
 }
 

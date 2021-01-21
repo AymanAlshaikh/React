@@ -1,10 +1,11 @@
+import { Pics, Details, Sidebyside } from "../styles";
 function ProductItem(props) {
   return (
-    <div className="imgContainer">
-      <img src={props.product.pic} />
-      <h3>{props.product.name}</h3>
-      <h3>{props.product.price}</h3>
-    </div>
+    <Sidebyside>
+      <Pics src={props.product.pic} />
+      <Details>{props.product.name}</Details>
+      <Details>{props.product.price}</Details>
+    </Sidebyside>
   );
 }
 
