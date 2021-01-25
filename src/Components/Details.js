@@ -1,10 +1,16 @@
-import { Pics, Details, Sidebyside } from "../styles";
+import { Pics, Details, Sidebyside, Btn } from "../styles";
 import ProductItem from "./ProductItem";
 import products from "../products";
+import DeleteButton from "./Buttons/DeleteButton";
 const ProductDetail = (props) => {
   return (
     <Sidebyside>
       <button onClick={() => props.setProduct(null)}>Back</button>
+      <DeleteButton
+        deleteProduct={props.deleteProduct}
+        product={props.product}
+        setProduct={props.setProduct}
+      />
       <Pics
         onClick={() => props.setProduct(props.product)}
         src={props.product.pic}

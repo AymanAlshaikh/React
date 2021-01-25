@@ -1,4 +1,5 @@
-import { Pics, Details, Sidebyside } from "../styles";
+import { Pics, Details, Sidebyside, Btn } from "../styles";
+import DeleteButton from "./Buttons/DeleteButton";
 function ProductItem(props) {
   return (
     <Sidebyside>
@@ -8,6 +9,12 @@ function ProductItem(props) {
       />
       <Details>{props.product.name}</Details>
       <Details>{props.product.price}</Details>
+      <Details>{props.deleteProduct}</Details>
+      <DeleteButton
+        deleteProduct={props.deleteProduct}
+        product={props.product}
+        setProduct={props.setProduct}
+      />
     </Sidebyside>
   );
 }
