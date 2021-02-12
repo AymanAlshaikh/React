@@ -6,6 +6,8 @@ const products = [
     name: "chocolate cake",
     price: "10 BD",
     description: "Full of chocolate",
+    class: "rounded float-start",
+    height: "200px",
   },
   {
     id: 2,
@@ -14,6 +16,8 @@ const products = [
     name: "Saffron cake",
     price: "50 BD",
     description: "Saffron flavor",
+    class: "rounded float-end",
+    height: "200px",
   },
 ];
 export default products;

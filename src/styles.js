@@ -19,6 +19,7 @@ export const Description = styled.h2`
 export const Details = styled.h3`
   text-align: center;
   color: black;
+  align-item: center;
 `;
 export const Pics = styled.img`
   display: flex;
@@ -26,10 +27,9 @@ export const Pics = styled.img`
   margin-right: auto;
   margin-bottom: 10px;
   margin-top: auto;
-  width: 50%;
+  align-item: center;
 `;
 export const Sidebyside = styled.div`
-  height: 50%;
   margin-bottom: auto;
   margin-top: 50 px;
   margin-left: auto;
